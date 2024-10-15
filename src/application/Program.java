@@ -13,7 +13,8 @@ public class Program {
 		List<Integer> list = Arrays.asList(3, 4, 5, 10, 7);
 		
 		// Criar um Stream inteiro
-		Stream<Integer> st1 = list.stream();
+		//Stream<Integer> st1 = list.stream();
+		Stream<Integer> st1 = list.stream().map(x -> x * 10);// map aplica uma função a cada elemento da minha Stream.
 		
 		System.out.println(Arrays.toString(st1.toArray()));
 	}
